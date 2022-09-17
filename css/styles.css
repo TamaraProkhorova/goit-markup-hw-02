@@ -86,7 +86,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-color-one);
@@ -131,7 +130,6 @@ body {
   color: var(--text-color-two);
 }
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -144,7 +142,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
 }
@@ -155,7 +152,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
 }
@@ -163,15 +159,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
 }
 .team-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-three);
 }
@@ -216,18 +209,35 @@ body {
 
 /* ------Portfolio------ */
 .filter {
+  background-color: var(--primary-color);
 }
 .btn-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26p / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color-two);
 }
 .filter-btn {
+  font-family: inherit;
+  background-color: var(--tertiary-color);
 }
-.filter-list {
-}
-.filter-item {
-}
-.filter-link {
+.filter-btn:hover,
+.filter-btn:focus {
+  cursor: pointer;
+  color: var(--text-color-one);
+  background-color: var(--accent-color);
 }
 .filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--text-color-two);
 }
 .filter-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color-three);
 }
