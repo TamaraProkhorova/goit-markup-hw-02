@@ -2,10 +2,12 @@
   --primary-color: #ffffff;
   --secondary-color: #2f303a;
   --tertiary-color: #f5f4fa;
+  --logo-color: #000000;
   --text-color-one: #ffffff;
   --text-color-two: #212121;
   --text-color-three: #757575;
   --accent-color: #2196f3;
+  --text-color-four: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -36,7 +38,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-color);
 }
 .web {
   color: var(--accent-color);
@@ -61,7 +63,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color-two);
+  cursor: pointer;
+  color: var(--text-color-three);
 }
 .header-email:hover,
 .header-email:focus {
@@ -73,12 +76,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  cursor: pointer;
   color: var(--text-color-three);
 }
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
-  cursor: pointer;
 }
 
 /*------ Hero------ */
@@ -99,18 +102,17 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   text-align: center;
+  cursor: pointer;
+  border-color: transparent;
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: var(--text-color-one);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  cursor: pointer;
+  background-color: #188ce8;
 }
 
 /*------ Features------ */
@@ -198,7 +200,6 @@ body {
   font-style: normal;
 }
 .footer-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -207,11 +208,10 @@ body {
 
 .footer-email,
 .footer-tel {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color-four);
 }
 .footer-link:hover,
 .footer-email:hover,
@@ -232,11 +232,18 @@ body {
 }
 .filter-btn {
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  text-align: center;
+  border-color: transparent;
+  letter-spacing: 0.03em;
+  cursor: pointer;
   background-color: var(--tertiary-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  cursor: pointer;
   color: var(--text-color-one);
   background-color: var(--accent-color);
 }
