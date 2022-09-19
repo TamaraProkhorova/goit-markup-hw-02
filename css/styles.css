@@ -218,6 +218,11 @@ body {
 .footer-tel:hover {
   color: var(--accent-color);
 }
+.footer-link:focus,
+.footer-email:focus,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
 
 /* ------Portfolio------ */
 .filter {
